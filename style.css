@@ -445,6 +445,7 @@ account-page{
     padding: 20px 0;
     margin: auto;  
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+    overflow: hidden;
 }
 .form-container span{
      font-weight: bold;
@@ -464,6 +465,7 @@ account-page{
     padding: 0 20px;
     position: absolute;
     top: 130px;
+    transition: transform 1s ;
 }
 form input{
     width: 100% ;

@@ -45,8 +45,8 @@
             <div class="col-2">
               <div class="form-container">
                   <div class="form-btn">
-                      <span>login</span>
-                      <span>Register</span>
+                      <span onclick="login()">login</span>
+                      <span onclick="register()">Register</span>
                       <hr id="indicator"> 
                   </div>
 
@@ -130,6 +130,32 @@
                 }
             }
         </script>
+
+        <!-- -----------js for toggle Form---------------- -->
+
+<script>
+
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var indicator = document.getElementById("indicator");
+
+function register(){
+
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    indicator.style.transform = "translateX(100px)";
+
+}
+function login(){
+
+RegForm.style.transform = "translateX(300px)";
+LoginForm.style.transform = "translateX(300px)";
+indicator.style.transform = "translateX(0px)";
+}
+
+
+
+</script>
 
 </body>
 
